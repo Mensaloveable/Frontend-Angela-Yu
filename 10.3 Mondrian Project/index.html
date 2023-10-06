@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +18,82 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
 
+      .paint {
+        display: grid;
+        background: #000;
+        height: 748px;
+        width: 748px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+
+      .first {
+        background: #e72f24;
+      }
+
+      .second {
+        background: #f0f1ec;
+        grid-column: span 3;
+      }
+
+      .third {
+        background: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      .forth {
+        background: #f0f1ec;
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+
+      .fifth {
+        background: #004592;
+        border-bottom: 10px solid #000;
+      }
+
+      .sixth {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      .seventh {
+        background-color: #f0f1ec;
+      }
+
+      .eighth {
+        background: #f9d01e;
+      }
+
+      .nineth {
+        background: #232629;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="paint">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="forth"></div>
+      <div class="fifth"></div>
+      <div class="sixth"></div>
+      <div class="seventh"></div>
+      <div class="eighth"></div>
+      <div class="nineth"></div>
+    </div>
+  </body>
 </html>
